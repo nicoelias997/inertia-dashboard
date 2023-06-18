@@ -55,6 +55,19 @@
                 </template>
                 About us
             </nav-link>
+            <nav-link :href="route('departments.index')" :active="route().current('departments.index')">
+                Departments
+            </nav-link>
+            <nav-link :href="route('employees.index')" :active="route().current('employees.index')">
+                Employees
+            </nav-link>
+            <nav-link :href="route('graphic')" :active="route().current('graphic')">
+                Graphic
+            </nav-link>
+            <nav-link :href="route('reports')" :active="route().current('reports')">
+                Reports
+            </nav-link>
+            
 
             <a class="flex items-center mt-4 py-2 px-6 text-gray-100" href="#" @click="showingTwoLevelMenu = !showingTwoLevelMenu">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
