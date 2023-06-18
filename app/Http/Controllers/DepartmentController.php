@@ -36,7 +36,7 @@ class DepartmentController extends Controller
     
     public function edit(Department $department)
     {
-        return Inertia::render('Departments/Edit', ['deparment' => $department]);
+        return Inertia::render('Departments/Edit', ['department' => $department]);
     }
 
 
